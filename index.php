@@ -1,11 +1,9 @@
 <?php
 
-$message = 'ここを変えれば他の変数も一気に変更できる';
+$name ='tanaka';
 
-echo $message;
-echo $message;
-echo $message;
-echo $message;
-echo $message;
+$age = 21;
+
+var_dump($age);
 
 ?>
