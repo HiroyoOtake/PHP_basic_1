@@ -1,12 +1,11 @@
 <?php
 
-echo '1';
-// echo '2';
-# echo '3';
+$message = 'ここを変えれば他の変数も一気に変更できる';
 
-/*
-echo '4';
-echo '5';
- */
+echo $message;
+echo $message;
+echo $message;
+echo $message;
+echo $message;
 
 ?>
