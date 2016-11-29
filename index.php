@@ -1,18 +1,11 @@
 <?php
 
-$animals = array('dog','cat','rabbit');
+$fruits = array('red'=>'りんご','yellow'=>'ばなな','green'=>'メロン');
 
-// echo $animals[2];
+echo $fruits['yellow'];
 
-$animals[] = 'elephant';
+$fruits['pink'] = 'peach';
 
-// echo $animals[3];
+var_dump($fruits);
 
-// var_dump($animals);
-
-$animals[0] = 'bat';
-
-unset($animals[0]);
-
-print_r($animals);
 ?>
