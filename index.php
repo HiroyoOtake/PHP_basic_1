@@ -1,12 +1,19 @@
 <?php
 
-// 比較演算子 > < >= <= == !=
-// 論理演算子 &&(AND) ||(OR) !(NOT)
-//
-$score = 60;
+$score = 40;
 $age = 20;
 
-if ($score > 50 && $age = 18) {
+if ($score >= 50)
+{
 	echo '合格';
 }
+elseif($score >= 40 && $age >= 18)
+{
+	echo '再試験';
+}
+else
+{
+	echo '不合格';
+}
+
 ?>
