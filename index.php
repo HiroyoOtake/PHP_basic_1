@@ -1,28 +1,24 @@
 <?php
 
-$animals = array('イヌ', 'ネコ', 'うさぎ');
+// foreachの練習
+// // (1)次のような連想配列$stockが与えられているとき、下記のような出力が得られるようなプログラムをforeachを用いて書け。
 
-// for ($i = 0; $i <= 2; $i++)
-// {
-// 	echo $animals[$i];
-// }
 
-foreach ($animals as $animal)
+/** 出力結果 **
+にんじんの値段は100円
+たまねぎの値段は150円
+じゃがいもの値段は200円
+***************/
+
+$stock = array(
+'にんじん' => 100,
+'たまねぎ' => 150,
+'じゃがいも' => 200,
+);
+
+foreach ($stock as $vagetables => $price)
 {
-	echo $animal . '<br>';
-}
-
-$fruits = array(
-	'red' => 'apple',
-	'yellow' => 'banana',
-	'green' => 'melon',
-	'purple' => 'grape'
-	);
-
-// foreach (対象となる配列 as ラベルの名前 => 要素の名前)
-foreach ($fruits as $color =>  $fruit)
-{
-	echo $fruit . 'の色は' . $color . '<br>';
+	echo $vagetables . 'の値段は' . $price . '円<br>';
 }
 
 
