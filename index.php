@@ -1,25 +1,15 @@
-<?php
-
-// foreachの練習
-// // (1)次のような連想配列$stockが与えられているとき、下記のような出力が得られるようなプログラムをforeachを用いて書け。
-
-
-/** 出力結果 **
-にんじんの値段は100円
-たまねぎの値段は150円
-じゃがいもの値段は200円
-***************/
-
-$stock = array(
-'にんじん' => 100,
-'たまねぎ' => 150,
-'じゃがいも' => 200,
-);
-
-foreach ($stock as $vagetables => $price)
-{
-	echo $vagetables . 'の値段は' . $price . '円<br>';
-}
-
-
-?>
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>フォームの練習</title>
+	</head>
+	<body>
+		<p>名前と感想を入力して下さい。</p>
+		<form action="contact.php" method="post">
+			名前:<input type="text" name="name"><br>
+			感想:<input type="text" name="impression">
+			<input type="submit" value="感想を投稿">
+		</form>
+	</body>
+</html>
